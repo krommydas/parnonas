@@ -1,0 +1,4 @@
+<ng-container [ngSwitch]="data.type">
+  <menu-item-text [data]="data.content" *ngSwitchCase="MenuItemType.AboutUs"></menu-item-text>
+  <menu-item-media [data]="data.content" *ngSwitchCase="MenuItemType.Media"></menu-item-media>
+</ng-container>

@@ -1,0 +1,12 @@
+<app-header [data]="headerData"></app-header>
+
+<mat-tab-group>
+  <mat-tab *ngFor="let tab of menuItems">
+    <ng-template mat-tab-label>
+      <span class=" {{ tab.headerClass }}"> {{ tab.headerText }} </span>
+    </ng-template>
+    <menu-item-proxy [data]="tab"></menu-item-proxy>
+  </mat-tab>
+</mat-tab-group>
+
+<app-footer [data]="footerData" ></app-footer>

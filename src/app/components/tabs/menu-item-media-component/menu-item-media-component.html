@@ -1,0 +1,12 @@
+<mat-card *ngFor="let mediaCollection of data.items">
+  <mat-card-header>
+    <mat-card-title>{{ mediaCollection.groupTitle }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <span class="row">
+      <ng-template ngFor let-item [ngForOf]="mediaCollection.groupItems" >
+        <img mat-card-lg-image src="{{Globals.IMAGES_PATH + '/' + item.thumbnailUrl}}" (click)="openDialog(item)" class="img-thumbnail rounded"/>
+      </ng-template>
+    </span>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,3 @@
+<span class="mediaContent" [ngSwitch]="media.type">
+  <img src="{{Globals.IMAGES_PATH + '/' + media.src}}" *ngSwitchCase="MediaType.Image" class="img-fluid"/>
+</span>

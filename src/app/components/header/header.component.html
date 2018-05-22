@@ -1,0 +1,8 @@
+<div class="header">
+  <span *ngIf="data">
+    <span *ngIf="data.companyIconUrl" class="companyIcon row">
+      <i class="{{data.companyIconUrl}}"></i>
+    </span>
+    <span *ngIf="data.companyName" class="companyName">{{ data.companyName }}</span>
+  </span>
+</div>

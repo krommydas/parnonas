@@ -1,0 +1,7 @@
+.mat-tab-labels {
+  justify-content: center; /* align items in Main Axis */
+}
+
+mat-tab-group {
+  height: 80%
+}
