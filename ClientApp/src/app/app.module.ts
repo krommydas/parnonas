@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -27,6 +28,8 @@ import { MediaPlayerComponent } from './components/media-player/media-player-com
     MediaPlayerComponent
   ],
   imports: [
+   BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,

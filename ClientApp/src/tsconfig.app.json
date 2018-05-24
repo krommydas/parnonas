@@ -1,14 +1,12 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "traceResolution": true,
     "outDir": "../out-tsc/app",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "module": "es2015",
     "types": [],
     "paths": {
-      "globalsPath": [ "app/globals" ],
-      "*": [ "app/components/tabs/" ]
+      "globalsPath": [ "app/globals" ]
     }
   },
   "exclude": [
